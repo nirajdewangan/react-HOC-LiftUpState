@@ -1,4 +1,5 @@
 import React from 'react';
+import UpdatedComponent from './withCounter';
 
 class ClickCounter extends React.Component {
   constructor(props) {

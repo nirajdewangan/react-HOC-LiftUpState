@@ -1,5 +1,9 @@
 import React, { Component } from 'react';
 
+//Two ways to bind the event in React js
+//globalChange={(e) => this.globalChange(e)}
+//globalChange={this.globalChange.bind(this)}
+
 class LiftStateUp extends Component {
   constructor() {
     super();
@@ -17,7 +21,7 @@ class LiftStateUp extends Component {
       <>
         <Child
           val={this.state.data}
-          globalChange={this.globalChange.bind(this)}
+          globalChange={(e) => this.globalChange(e)}
         />
         <br />
         <Child val={this.state.data} />
